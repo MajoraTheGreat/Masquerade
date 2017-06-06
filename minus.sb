@@ -1,0 +1,5 @@
+TextWindow.WriteLine("a number betweem 1 and 1000")
+number = TextWindow.Read()
+TextWindow.WriteLine("a number betweem 1 and 1000")
+num = TextWindow.Read()
+TextWindow.WriteLine( num - number)

@@ -1,0 +1,70 @@
+GraphicsWindow.Show()
+GraphicsWindow.BackgroundColor = "black"
+GraphicsWindow.Title = "calculator"
+Sound.Play("\\mercury\13.O.Howard\My Music\elements_64kb.mp3")
+imagepath = "\\mercury\13.O.Howard\My Pictures\Excellent-awesome-desktop-backgrounds-550x309.jpg"
+Shapes.AddImage(imagepath)
+add = Controls.AddButton(" + ",50,100)  ' this adds a button to the screen
+minus = Controls.AddButton(" - ",50,130)  ' this adds a button to the screem
+divide = Controls.AddButton(" ÷ ",50,160)  ' this adds a button to the screem
+times = Controls.AddButton( " x ",50,190)
+Controls.ButtonClicked = OnButtonClicked
+
+Sub OnButtonClicked
+  buttonClicked = Controls.LastClickedButton
+  If buttonClicked = add Then  'if the forward button is pressed, then move forward
+   TextWindow.WriteLine("a number betweem 1 and 1000")
+number = TextWindow.Read()
+TextWindow.WriteLine("a number betweem 1 and 1000")
+num = TextWindow.Read()
+TextWindow.WriteLine( num + number)
+If num = "/" and number = "\" Then 
+  TextWindow.WriteLine("illuminati confirmed") 
+  Sound.Play("C:\Users\13.o.howard\Downloads\Sad Violin Melody - Air Horn FULL.mp3")
+
+ 
+      
+   
+  
+  EndIf
+
+  
+  buttonClicked = Controls.LastClickedButton
+  If buttonClicked = minus Then  'if the forward button is pressed, then move forward
+    TextWindow.WriteLine("a number betweem 1 and 1000")
+number = TextWindow.Read()
+TextWindow.WriteLine("a number betweem 1 and 1000")
+num = TextWindow.Read()
+TextWindow.WriteLine( num - number)
+  EndIf
+  
+  
+  buttonClicked = Controls.LastClickedButton
+  If buttonClicked = divide Then  'if the forward button is pressed, then move forward
+TextWindow.WriteLine("a number betweem 1 and 1000")
+number = TextWindow.Read()
+TextWindow.WriteLine("a number betweem 1 and 1000")
+num = TextWindow.Read()
+TextWindow.WriteLine( number/num)
+  EndIf
+ 
+      buttonClicked = Controls.LastClickedButton
+  If buttonClicked = times Then  'if the forward button is pressed, then move forward
+   TextWindow.WriteLine("a number betweem 1 and 1000")
+number = TextWindow.Read()
+TextWindow.WriteLine("a number betweem 1 and 1000")
+num = TextWindow.Read()
+TextWindow.WriteLine( num * number)
+
+
+
+  EndIf
+
+
+
+endif
+
+
+
+
+endsub
